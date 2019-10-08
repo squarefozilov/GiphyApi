@@ -35,7 +35,7 @@ $( document ).ready(function() {
   //function to remove last button
   function removeLastButton() {
     $("removeGif").on("click", function() {
-      topic.pop(lady);
+      topic.pop(userAn);
       displayGifButtons();
       return false;
     });
@@ -88,9 +88,6 @@ $( document ).ready(function() {
   displayGifButtons();
   addNewButton();
   removeLastButton();
-  
-  
-
   $(document).on("click", ".userAn", displayGifs);
   $(document).on("click", ".image", function() {
     var state = $(this).attr('data-state');
